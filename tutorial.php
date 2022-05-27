@@ -30,6 +30,35 @@ foreach($laptop_brands as $key => $element) {
 define("laptops", "Hp, Lenovo and Asus"); // String
 echo laptops;
 
-define("laptops", "Hp, Lenovo and Asus"); // Array
-echo laptops;
+// If Else Elseif
+define("laptops_arr", ["Hp", "Lenovo", "Asus"]); // Array
+echo "<br>";
+echo var_dump(laptops_arr);
+echo "<br>";
+echo laptops_arr[1];
+
+$t = date("H:m");
+
+if ($t < "10") {
+  echo "Have a good morning!";
+} elseif ($t < "20") {
+  echo "Have a good day!";
+} else {
+  echo "Have a good night!";
+  echo $t;
+}
+
+// User defined functions
+echo "<br><br>";
+
+function familyName($fname) {
+    echo "$fname <br>";
+}
+
+$names = array("Jani", "Hege", "Stale", "Kai Jim", "Borge");
+
+foreach($names as $ele){
+    familyName($ele);
+}
+
 ?>
